@@ -8,3 +8,5 @@ SET
     description = 'Controllers Battery Pack'
 WHERE product_name = 'Xbox Rechargeable';
 
+ALTER TABLE customers
+ADD COLUMN city VARCHAR(80);
