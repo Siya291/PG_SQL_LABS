@@ -21,3 +21,7 @@ WHERE price > 100
 SELECT product_name
 FROM products
 WHERE product_name LIKE '%box%';
+
+SELECT product_name
+FROM products
+WHERE product_name ILIKE '%box%';
