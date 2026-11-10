@@ -1,2 +1,4 @@
 Select * from customers;
 
+SELECT first_name, last_name, email
+FROM customers;
