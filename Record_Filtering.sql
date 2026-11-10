@@ -9,3 +9,7 @@ WHERE price BETWEEN 400 AND 2000;
 SELECT product_name, price
 FROM products
 ORDER BY price DESC;
+
+SELECT product_name, price
+FROM products
+ORDER BY price ASC;
