@@ -11,3 +11,8 @@ FROM customers;
 
 SELECT COUNT(*) AS total_products
 FROM products;
+
+SELECT
+    MIN(price) AS cheapest_price,
+    MAX(price) AS most_expensive_price
+FROM products;
