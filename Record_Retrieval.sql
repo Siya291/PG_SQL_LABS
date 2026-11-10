@@ -17,3 +17,7 @@ SELECT product_name, price, stock_quantity
 FROM products
 WHERE price > 100
   AND stock_quantity >= 20;
+
+SELECT product_name
+FROM products
+WHERE product_name LIKE '%box%';
