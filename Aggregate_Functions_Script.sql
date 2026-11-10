@@ -23,3 +23,16 @@ SELECT
 FROM order_items
 GROUP BY order_id
 ORDER BY order_id;
+
+SELECT
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    SUM(oi.quantity * oi.unit_price) AS total_spent
+FROM customers AS c
+INNER JOIN orders AS o
+    ON c.customer_id = o.customer_id
+INNER JOIN order_items AS oi
+    ON o.order_id = oi.order_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+ORDER BY total_spent DESC;
