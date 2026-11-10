@@ -8,3 +8,6 @@ FROM products;
 
 SELECT COUNT(*) AS total_customers
 FROM customers;
+
+SELECT COUNT(*) AS total_products
+FROM products;
