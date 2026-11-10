@@ -13,3 +13,7 @@ ORDER BY price DESC;
 SELECT product_name, price
 FROM products
 ORDER BY price ASC;
+
+SELECT product_name, stock_quantity, price
+FROM products
+ORDER BY stock_quantity ASC, price DESC;
