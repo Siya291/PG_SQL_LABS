@@ -8,3 +8,9 @@ ORDER BY price DESC;
 -- 3. Find products with fewer than 20 units in stock.
 Select * from products
 where stock_quantity < 20;
+
+-- 4. Display each order with the customer's name and order status.
+Select o.status, c.first_name 
+from orders o
+INNER JOIN customers c
+    ON o.customer_id = c.customer_id;
