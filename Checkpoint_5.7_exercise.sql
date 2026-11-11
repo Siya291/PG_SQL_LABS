@@ -12,5 +12,9 @@ Select *
 From orders
 Where status IN ('PAID', 'SHIPPED');
 
--- 4. Search for product names containing `USB`, regardless of letter case.
+-- 4. Search for product names containing `XBOX`, regardless of letter case.
+Select * 
+From products
+Where product_name ILIKE '%XBOX%';
+
 -- 5. Display products from most expensive to least expensive.
