@@ -8,5 +8,9 @@ From products
 Where price > 200;
 
 -- 3. Find orders with a status of `PAID` or `SHIPPED`.
+Select *
+From orders
+Where status IN ('PAID', 'SHIPPED');
+
 -- 4. Search for product names containing `USB`, regardless of letter case.
 -- 5. Display products from most expensive to least expensive.
