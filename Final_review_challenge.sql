@@ -20,3 +20,11 @@ select p.product_name, oi.quantity, oi.unit_price
 from order_items oi
 INNER JOIN products p
      ON p.product_id = oi.product_id;
+
+-- 6. Calculate the total value of each order.
+SELECT
+    order_id,
+    SUM(quantity * unit_price) AS total_order_value
+FROM order_items
+GROUP BY order_id
+ORDER BY order_id;
