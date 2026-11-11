@@ -14,3 +14,9 @@ Select o.status, c.first_name
 from orders o
 INNER JOIN customers c
     ON o.customer_id = c.customer_id;
+
+-- 5. Display each order's products, quantities and unit prices.
+select p.product_name, oi.quantity, oi.unit_price
+from order_items oi
+INNER JOIN products p
+     ON p.product_id = oi.product_id;
