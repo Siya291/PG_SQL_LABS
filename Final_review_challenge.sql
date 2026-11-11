@@ -38,3 +38,7 @@ FROM products;
 SELECT * FROM products
 ORDER BY price DESC
 LIMIT 5;
+
+-- 9. Count how many customers are registered.
+Select COUNT(customer_id) as number_of_customers
+From customers;
