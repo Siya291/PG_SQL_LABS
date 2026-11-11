@@ -42,3 +42,15 @@ LIMIT 5;
 -- 9. Count how many customers are registered.
 Select COUNT(customer_id) as number_of_customers
 From customers;
+
+-- 10. Add a new customer and create an order for that customer.
+INSERT INTO customers(first_name, last_name, email, phone)
+VALUES ('Moe', 'Moe', 'Moe@gmail.com', '0720000007');
+
+INSERT INTO orders (customer_id, status)
+VALUES
+    (7, 'PAID');
+
+INSERT INTO order_items (order_id, product_id, quantity, unit_price)
+VALUES
+    (7, 3, 2, 7999.50);
