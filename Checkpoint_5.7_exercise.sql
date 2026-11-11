@@ -18,3 +18,6 @@ From products
 Where product_name ILIKE '%XBOX%';
 
 -- 5. Display products from most expensive to least expensive.
+Select *
+From products
+ORDER BY price DESC;
