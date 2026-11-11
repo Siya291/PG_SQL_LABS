@@ -37,3 +37,35 @@
 - A primary key uniquely identifies each row inside its own table, while a foreign key links that row to a primary key in a different table. 
 * Example:
 - Inside table 'Orders' we have order_id which is a primary key of the 'Orders' table and customer_id which references table 'Customers' table and is the foreign key of table 'Orders'
+
+## Final understanding questions
+1. What is a primary key?
+- is a column that uniquely identifies every single row in a database table.
+
+2. What is a foreign key?
+- is a column in one table that links to the primary key of another table.
+
+3. Why do we use joins?
+- We use joins to combine rows from two or more tables based on a related column between them.
+
+4. What is the difference between `WHERE` and `HAVING`?
+- WHERE: Filters individual rows before any grouping or aggregation happens and HAVING: Filters grouped data after a GROUP BY clause and aggregate functions.
+
+5. What is the difference between `UPDATE` and `ALTER TABLE`?
+- UPDATE: Modifies the actual data inside existing rows of a table and ALTER TABLE: Modifies the structure of the table itself.
+
+6. Why should you be careful when using `DELETE`?
+- DELETE actions are immediate and cannot be easily undone.
+
+7. What is the difference between `DELETE` and `DROP TABLE`?
+- DELETE: Removes specific rows or all rows of data from a table, while leaving the empty table structure, columns, and permissions intact.
+- DROP TABLE: Completely destroys the entire table, wiping out both the data and the table structure itself from the database.
+
+8. Why is `ORDER BY` useful with `LIMIT`?
+-  Pairing ORDER BY with LIMIT sorts the results first so you can reliably fetch specific subsets.
+
+9. When would you use `SUM()` instead of `AVG()`?
+-  When I need the combined total of a numeric column.
+
+10. Why is it important to use constraints in a relational database?
+- Constraints enforce rules which protects the database's accuracy and reliability.
