@@ -31,3 +31,9 @@
 
 5. Why does `order_items` store `unit_price`?
 - Storing unit_price inside order_items preserves historical accuracy by locking in the exact price the customer paid at the time of purchase.
+
+## Checkpoint 3.2
+* Explain the difference between a primary key and a foreign key. Give one example of each from BrightMart.
+- A primary key uniquely identifies each row inside its own table, while a foreign key links that row to a primary key in a different table. 
+* Example:
+- Inside table 'Orders' we have order_id which is a primary key of the 'Orders' table and customer_id which references table 'Customers' table and is the foreign key of table 'Orders'
