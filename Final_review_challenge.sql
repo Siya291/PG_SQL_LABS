@@ -33,3 +33,8 @@ ORDER BY order_id;
 SELECT 
     ROUND(AVG(price), 2) AS price_average 
 FROM products;
+
+-- 8. Find the five most expensive products.
+SELECT * FROM products
+ORDER BY price DESC
+LIMIT 5;
