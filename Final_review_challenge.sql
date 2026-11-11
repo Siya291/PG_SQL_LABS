@@ -28,3 +28,8 @@ SELECT
 FROM order_items
 GROUP BY order_id
 ORDER BY order_id;
+
+-- 7. Calculate the average price of all products.
+SELECT 
+    ROUND(AVG(price), 2) AS price_average 
+FROM products;
