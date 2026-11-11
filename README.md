@@ -15,3 +15,19 @@
 
 3. Which command did you use to connect to it?
 - \c brightmart
+
+## Checkpoint 2.7
+1. Why do we keep customers and orders in separate tables?
+- Keeping customers and orders in separate tables prevents duplicate data and avoids update anomalies.
+
+2. Why does `orders` contain `customer_id`?
+- customer_id acts as a foreign key that links each order back to the specific person who placed it.
+
+3. What could go wrong if `price` were stored as text?
+- Storing numbers as text breaks mathematical operations, while letting invalid characters sneak into your data.
+
+4. What does the `CHECK (quantity > 0)` rule protect against?
+- This constraint protects data integrity by blocking zero or negative quantities from being saved in the database.
+
+5. Why does `order_items` store `unit_price`?
+- Storing unit_price inside order_items preserves historical accuracy by locking in the exact price the customer paid at the time of purchase.
